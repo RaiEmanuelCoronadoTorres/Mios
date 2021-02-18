@@ -1,0 +1,71 @@
+@media screen and (max-width: 920px){
+
+    .navegacion{
+        grid-template-columns: repeat(2 / 1fr);
+        grid-template-areas: "logo bars";
+        margin: 0;
+    }
+    .navegacion .logo{
+        grid-area: logo;
+        align-self: center;
+        justify-self: start;
+        margin-left: 1em;
+    }
+
+    .navegacion .bars{
+        display: block;
+        justify-self: end;
+        margin-right: 1em;
+    }
+
+    .navegacion .ul{
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        display: grid;
+        transform: translatey(-150%);
+        margin-top: 65px;
+        background-color: var(--colorBlanco);
+        transition: .5s;
+        text-align: center;
+    }
+
+    .navegacion .ul-toggle{
+        transform: translatey(0%);
+    }
+
+    .navegacion .ul .li{
+        height: 3em;
+        align-self: center;
+        width: 100%;
+        padding-top: 15px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .navegacion .ul .li:hover{
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    }
+
+
+        /* HERO */
+
+    .hero {
+        width: 96%;
+        height: 70vw;
+        padding-left: 2em;
+    }
+
+        /* SECTION 1 */
+
+    .info{
+        display: grid;
+        width: 80%;
+        margin: auto;
+        padding: 3em;
+        grid-template-columns: repeat(1 / 1fr);
+        grid-template-areas: "team"
+                             "porque";
+    }
+    
+}

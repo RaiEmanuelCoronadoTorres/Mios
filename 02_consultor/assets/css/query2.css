@@ -1,0 +1,9 @@
+@media screen and (max-width: 640px) {
+    
+    .hero {
+        overflow: hidden;
+        height: 150vw;
+        padding-left: 3em;
+        width: 92%;
+    }
+}
