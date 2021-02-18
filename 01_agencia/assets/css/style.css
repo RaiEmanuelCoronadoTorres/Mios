@@ -1,0 +1,452 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color1: #DB1C54;
+	--color2: #000000;
+	--color3: #F4F4F4;
+	--color4: #ffffff;
+    --tamano1: 200;
+    --tamano2: 800;
+    --zide1: 18px;
+    --zide2: 40px;
+    --zide3: 50px;
+}
+
+
+/* MENÚ */
+
+
+.nav{
+    background-color: var(--color4);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+header img{
+    width: 250px;
+    grid-column:2/3;
+}
+
+.nav .menu{
+    grid-column: 5/8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav .menu li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav .menu a{
+    text-decoration: none;
+    font-weight: var(--tamano2);
+    font-size: var(--zide1);
+    color: var(--color2);
+}
+
+.nav .menu a:hover{
+    color: rgba(0,0,0, .5);
+    transition: .25s;
+}
+
+
+.nav .menu-bar .fas{
+    color: var(--color1);
+    font-size: 25px;
+    display: none;
+}
+
+/* HERO*/
+
+
+.hero{
+    height: 90vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .8)), url(../img/Hero.jpg);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-size: cover;
+}
+
+.hero .hero-lead{
+    color: var(--color3);
+    font-size: var(--zide3);
+    grid-column: 2/7;
+    grid-row: 2/3;
+}
+
+.hero .hero-lead .punto{
+    color: var(--color1);
+}
+
+
+.hero .button{
+    grid-area: 2/2;
+    grid-row: 4;
+}
+
+.hero .button span{
+    background-color: var(--color1);
+    padding: 1em 1.3em;
+    color: var(--color4);
+    font-size: var(--zide1);
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.hero .button span:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0, .5);
+    transition: .5s;
+    letter-spacing: 2.5px;
+
+}
+
+
+/* Section*/
+
+
+.container-info .caracteristicas{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.container-info .caracteristicas .titulo-caract{
+    color: var(--color2);
+    grid-column: 2/5;
+    font-size: var(--zide2);
+    font-weight: var(--tamano2);
+    text-transform: capitalize;
+    font-size: 60px;
+}
+
+.container-info .caracteristicas .titulo-caract .punto{
+    color: var(--color1);
+}
+
+.container-info .caracteristicas .parrafo-caract{
+    color: var(--color2);
+    grid-column: 6/8;
+    grid-row: 1;
+    font-size:25px;
+    font-weight: var(--tamano1);
+}
+
+
+.ofrezco{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-content: center;
+    width: 90%;
+    margin: 50px auto;
+    cursor: pointer;
+}
+
+.ofrezco .diseno1{
+    margin: 10px;
+    grid-column: 1;
+    padding: auto;
+}
+
+.ofrezco .diseno2{
+    margin: 10px;
+    grid-column: 2;
+    padding:auto;
+}
+
+.ofrezco .diseno3{
+    margin: 10px;
+    grid-column: 3;
+    padding: auto;
+}
+
+.ofrezco div i{
+    color: var(--color1);
+    font-size: 50px;
+    padding: 0px 4em;
+}
+
+.ofrezco div h3{
+    color: var(--color2);
+    font-size: 25px;
+    text-align: center;
+}
+
+.ofrezco div p{
+    color: var(--color2);
+    font-size: 25px;
+    text-align: center;
+}
+
+.ofrezco .diseno1:hover{
+    transform: translatey(-4%);
+    transition: .5s;
+}
+
+.ofrezco .diseno2:hover{
+    transform: translatey(-4%);
+    transition: .25s;
+}
+
+.ofrezco .diseno3:hover{
+    transform: translatey(-4%);
+    transition: .25s;
+}
+
+
+/* División */
+
+.division{
+    height: 60vh;
+    background-image: linear-gradient(rgba(16, 16, 16, 1), rgba(16, 16, 16, .9)), url(../img/Hero.jpg);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-size: cover;
+}
+
+.division .hero-lead{
+    color: var(--color3);
+    font-size: var(--zide2);
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+
+.division .hero-lead p{
+    color: var(--color4);
+    font-size: 25px;
+}
+
+.division .hero-lead .punto{
+    color: var(--color1);
+}
+
+
+.division .button{
+    grid-area: 2/2;
+    grid-row: 4;
+}
+
+.division .button span{
+    background-color: var(--color1);
+    padding: 1em 1.3em;
+    color: var(--color4);
+    font-size: var(--zide1);
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.division .button span:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0, .5);
+    transition: .5s;
+    letter-spacing: 2.5px;
+
+}
+
+
+/*Trabajo*/
+
+.container-info2 .caracteristicas2{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.container-info2 .caracteristicas2 .titulo-caract2{
+    color: var(--color2);
+    grid-column: 2/8;
+    text-align: center;
+    grid-row: 1;
+    font-size: var(--zide2);
+    font-weight: var(--tamano2);
+    text-transform: capitalize;
+    font-size: 60px;
+}
+
+.container-info2 .caracteristicas2 .titulo-caract2 .punto2{
+    color: var(--color1);
+}
+
+.container-info2 .caracteristicas2 .parrafo-caract2{
+    color: var(--color2);
+    grid-column: 2/8;
+    grid-row: 2;
+    font-size:25px;
+    font-weight: var(--tamano1);
+    text-align: center;
+}
+
+
+
+/* Portafolio */
+
+.porta .caracteristicas3{
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: var(--color3);
+}
+
+.porta .caracteristicas3 .titulo-caract3{
+    color: var(--color2);
+    grid-column: 2/8;
+    text-align: center;
+    grid-row: 1;
+    font-size: var(--zide2);
+    font-weight: var(--tamano2);
+    text-transform: capitalize;
+    font-size: 60px;
+}
+
+.porta .caracteristicas3 .titulo-caract3 .punto3{
+    color: var(--color1);
+}
+
+.porta .caracteristicas3 .parrafo-caract3{
+    color: var(--color2);
+    grid-column: 2/8;
+    grid-row: 2;
+    font-size:25px;
+    font-weight: var(--tamano1);
+    text-align: center;
+}
+
+
+.imagenes .img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "dos uno tres";
+    background-color: var(--color3);
+    padding: 5em 0px;
+}
+
+.imagenes .img .img__uno{
+    grid-area: uno;
+}
+
+.imagenes .img .img__uno:hover{
+    transform: translatey(-4%);
+    transition: .5s;
+}
+
+
+.imagenes .img .img__dos{
+    grid-area: dos;
+}
+
+.imagenes .img .img__dos:hover{
+    transform: translatey(-4%);
+    transition: .5s;
+}
+
+.imagenes .img .img__tres{
+    grid-area: tres;
+}
+
+.imagenes .img .img__tres:hover{
+    transform: translatey(-4%);
+    transition: .5s;
+}
+
+
+/* CONTACTO */
+
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "izquierda derecha";
+}
+
+.contacto .contacto_izquierda{
+    grid-area: izquierda;
+    padding: 2em;
+    color: var(--color2);
+    font-size: var(--zide2);
+}
+
+.contacto .contacto_derecha{
+    grid-area: derecha;
+}
+
+.contacto .contacto_izquierda .punto{
+    color: var(--color1);
+}
+
+.contacto .contacto_izquierda .parrafo__contacto{
+    font-size: 20px;
+}
+
+.contacto .contacto_izquierda .iconos__redes{
+    padding: 20px 0;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+.contacto .contacto_derecha{
+    grid-area: derecha;
+    padding: 2em;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+
+.contacto .contacto_derecha label{
+    color: var(--color2);
+    font-size: 18px;
+}
+
+.contacto .contacto_derecha input{
+    height: 30px;
+    padding: 0 5px;
+}
+
+.contacto .contacto_derecha input .name{
+    background:var(--color1);
+}
+
+
+.contacto .contacto_derecha .button button{
+    color: var(--color3);
+    background: var(--color1);
+    border-bottom: none;
+    padding: 10px 25px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.contacto .contacto_derecha .button button:hover{
+    padding: 10px 35px;
+    transition: .5s;
+}
+
+
+    /* FOOTER */
+
+.foot .copy{
+    background: var(--color2);
+    height: 50px;
+    color: var(--color4);
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
